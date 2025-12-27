@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ChildComponent1 = ({onSelect}) => {
+const ChildComponent1 = ({setSelectedOption}) => {
   return (
     <div>
-        <button onClick={() => onSelect("Option 1")}>Select Option 1</button>
+        <button onClick={() => setSelectedOption("Option 1")}>Select Option 1</button>
     </div>
   )
 }
