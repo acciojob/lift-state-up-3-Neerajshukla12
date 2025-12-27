@@ -9,16 +9,16 @@ const App = () => {
 
  const [selectedOption, setSelectedOption] = useState(" ");
  
- const handleOptionChange=(option)=>{
-  setSelectedOption(option)
- }
+//  const handleOptionChange=(option)=>{
+//   setSelectedOption(option)
+//  }
 
   return (
     <div className="parent">
         {/* Do not remove the main div */}
-        <h2>Parent Component</h2>
-        <ChildComponent1 onSelect={handleOptionChange}/>
-        <ChildComponent2 onSelect={handleOptionChange}/>
+        <h1>Parent Component</h1>
+        <ChildComponent1 onSelect={setSelectedOption}/>
+        <ChildComponent2 onSelect={setSelectedOption}/>
       <p>Selected Option: <strong>{selectedOption}</strong></p>
 
 
